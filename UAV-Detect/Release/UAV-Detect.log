@@ -1,0 +1,52 @@
+﻿生成启动时间为 2016/3/17 13:09:23。
+     1>项目“G:\VS13\UAV-Detect\UAV-Detect\UAV-Detect.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D HAVE_TBB /D _UNICODE /D UNICODE /Gm- /EHsc /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt UAVtest.cpp
+         UAVtest.cpp
+       Link:
+         C:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\VS13\UAV-Detect\Release\UAV-Detect.exe" /INCREMENTAL:NO /NOLOGO opencv_ts300d.lib opencv_world300d.lib pthreadVC2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\VS13\UAV-Detect\Release\UAV-Detect.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\VS13\UAV-Detect\Release\UAV-Detect.lib" /MACHINE:X86 /SAFESEH Release\cvPrint.obj
+         Release\getCurrentTime.obj
+         Release\yuSaveMat.obj
+         Release\FastDPM.obj
+         Release\analyze_model.obj
+         Release\apply_rules.obj
+         Release\apply_rules2.obj
+         Release\apply_rules3.obj
+         Release\bboxpred_get.obj
+         Release\bboxpred_input.obj
+         Release\bounded_dt.obj
+         Release\bounded_dt2.obj
+         Release\clipboxes.obj
+         Release\cvPermutate.obj
+         Release\detections_trees2.obj
+         Release\draw_img.obj
+         Release\fconv.obj
+         Release\featpyramid.obj
+         Release\featpyramid2.obj
+         Release\features.obj
+         Release\features14_2.obj
+         Release\flipfeat.obj
+         Release\get_score_size.obj
+         Release\loadPyramid.obj
+         Release\load_model.obj
+         Release\loc_feat.obj
+         Release\model_get_block.obj
+         Release\nms.obj
+         Release\parse_detections.obj
+         Release\pDollar_nms.obj
+         Release\reduceboxes.obj
+         Release\sum_score.obj
+         Release\yuInd2Sub.obj
+         Release\yuStdDirFiles.obj
+         Release\boxextractor.obj
+         Release\fhog.obj
+         Release\kcftracker.obj
+         Release\UAVtest.obj
+         正在生成代码
+         已完成代码的生成
+         UAV-Detect.vcxproj -> G:\VS13\UAV-Detect\Release\UAV-Detect.exe
+     1>已完成生成项目“G:\VS13\UAV-Detect\UAV-Detect\UAV-Detect.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:10.00

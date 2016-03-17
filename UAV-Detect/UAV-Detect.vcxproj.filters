@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="DPM">
+      <UniqueIdentifier>{8786ce70-e2c4-48bc-b31e-caeaece80f16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DPM\source">
+      <UniqueIdentifier>{c5fea1a6-509d-457d-949d-acd462b0c90f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DPM\auxiliary">
+      <UniqueIdentifier>{e2300adc-7a03-404e-8120-5b4d6e750766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KCF">
+      <UniqueIdentifier>{602a5e43-32e5-470f-b8aa-dcac3a70cf78}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DPM\Auxiliary\cvPrint.cpp">
+      <Filter>DPM\auxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\Auxiliary\getCurrentTime.cpp">
+      <Filter>DPM\auxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\Auxiliary\yuSaveMat.cpp">
+      <Filter>DPM\auxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\analyze_model.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\apply_rules.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\apply_rules2.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\apply_rules3.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\bboxpred_get.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\bboxpred_input.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\bounded_dt.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\bounded_dt2.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\clipboxes.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\cvPermutate.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\detections_trees2.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\draw_img.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\fconv.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\featpyramid.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\featpyramid2.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\features.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\features14_2.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\flipfeat.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\get_score_size.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\load_model.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\loadPyramid.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\loc_feat.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\model_get_block.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\nms.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\parse_detections.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\pDollar_nms.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\reduceboxes.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\sum_score.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\yuInd2Sub.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\source\yuStdDirFiles.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="DPM\fastDPM\FastDPM.cpp">
+      <Filter>DPM\source</Filter>
+    </ClCompile>
+    <ClCompile Include="UAVtest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KCF\source\boxextractor.cpp">
+      <Filter>KCF</Filter>
+    </ClCompile>
+    <ClCompile Include="KCF\source\fhog.cpp">
+      <Filter>KCF</Filter>
+    </ClCompile>
+    <ClCompile Include="KCF\source\kcftracker.cpp">
+      <Filter>KCF</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DPM\include\PM_type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DPM\fastDPM\FastDPM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KCF\include\boxextractor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KCF\include\dirent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KCF\include\ffttools.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KCF\include\fhog.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KCF\include\kcftracker.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KCF\include\labdata.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KCF\include\recttools.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KCF\include\tracker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DPM\include\pthread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

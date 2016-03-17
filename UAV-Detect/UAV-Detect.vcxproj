@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{06A7628F-EFDD-4BC5-903A-D17047704551}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>UAVDetect</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>G:\VS13\UAV-Detect\UAV-Detect\DPM\auxiliary;G:\VS13\UAV-Detect\UAV-Detect\DPM\source;G:\VS13\UAV-Detect\UAV-Detect\DPM\include;G:\VS13\UAV-Detect\UAV-Detect\DPM\fastDPM;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DPM\Auxiliary\cvPrint.cpp" />
+    <ClCompile Include="DPM\Auxiliary\getCurrentTime.cpp" />
+    <ClCompile Include="DPM\Auxiliary\yuSaveMat.cpp" />
+    <ClCompile Include="DPM\fastDPM\FastDPM.cpp" />
+    <ClCompile Include="DPM\source\analyze_model.cpp" />
+    <ClCompile Include="DPM\source\apply_rules.cpp" />
+    <ClCompile Include="DPM\source\apply_rules2.cpp" />
+    <ClCompile Include="DPM\source\apply_rules3.cpp" />
+    <ClCompile Include="DPM\source\bboxpred_get.cpp" />
+    <ClCompile Include="DPM\source\bboxpred_input.cpp" />
+    <ClCompile Include="DPM\source\bounded_dt.cpp" />
+    <ClCompile Include="DPM\source\bounded_dt2.cpp" />
+    <ClCompile Include="DPM\source\clipboxes.cpp" />
+    <ClCompile Include="DPM\source\cvPermutate.cpp" />
+    <ClCompile Include="DPM\source\detections_trees2.cpp" />
+    <ClCompile Include="DPM\source\draw_img.cpp" />
+    <ClCompile Include="DPM\source\fconv.cpp" />
+    <ClCompile Include="DPM\source\featpyramid.cpp" />
+    <ClCompile Include="DPM\source\featpyramid2.cpp" />
+    <ClCompile Include="DPM\source\features.cpp" />
+    <ClCompile Include="DPM\source\features14_2.cpp" />
+    <ClCompile Include="DPM\source\flipfeat.cpp" />
+    <ClCompile Include="DPM\source\get_score_size.cpp" />
+    <ClCompile Include="DPM\source\loadPyramid.cpp" />
+    <ClCompile Include="DPM\source\load_model.cpp" />
+    <ClCompile Include="DPM\source\loc_feat.cpp" />
+    <ClCompile Include="DPM\source\model_get_block.cpp" />
+    <ClCompile Include="DPM\source\nms.cpp" />
+    <ClCompile Include="DPM\source\parse_detections.cpp" />
+    <ClCompile Include="DPM\source\pDollar_nms.cpp" />
+    <ClCompile Include="DPM\source\reduceboxes.cpp" />
+    <ClCompile Include="DPM\source\sum_score.cpp" />
+    <ClCompile Include="DPM\source\yuInd2Sub.cpp" />
+    <ClCompile Include="DPM\source\yuStdDirFiles.cpp" />
+    <ClCompile Include="KCF\source\boxextractor.cpp" />
+    <ClCompile Include="KCF\source\fhog.cpp" />
+    <ClCompile Include="KCF\source\kcftracker.cpp" />
+    <ClCompile Include="UAVtest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DPM\fastDPM\FastDPM.h" />
+    <ClInclude Include="DPM\include\PM_type.h" />
+    <ClInclude Include="DPM\include\pthread.h" />
+    <ClInclude Include="KCF\include\boxextractor.h" />
+    <ClInclude Include="KCF\include\dirent.h" />
+    <ClInclude Include="KCF\include\ffttools.hpp" />
+    <ClInclude Include="KCF\include\fhog.hpp" />
+    <ClInclude Include="KCF\include\kcftracker.hpp" />
+    <ClInclude Include="KCF\include\labdata.hpp" />
+    <ClInclude Include="KCF\include\recttools.hpp" />
+    <ClInclude Include="KCF\include\tracker.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
