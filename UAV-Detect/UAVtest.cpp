@@ -22,12 +22,12 @@ int main(int argc, char* argv[]){
 	bool FRAMES_FIRST = true;
 	int nFrames = 0;// Frame counter
 
-	string model_path("model.txt");//DPM model
+	string model_path("UAV_2.txt");//DPM model
 
 	cv::Mat frame;
 	cv::Mat image;
-	//cv::VideoCapture capture("data/test1.flv");
-	cv::VideoCapture capture(0);
+	cv::VideoCapture capture("uav_data/1.avi");
+	//cv::VideoCapture capture(0);
 	if (model_path.empty()){
 		cout << "Please input model file...." << endl;
 		return -1;

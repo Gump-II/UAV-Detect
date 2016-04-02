@@ -16,25 +16,28 @@ void  PM_type::draw_img(cv::Mat &img, vector<FLOATS_7> &detections, float Elapse
 		float		score = detections[i][6];
 
 		cv::Point2f	UL(x1, y1), BR(x2, y2);
-		//cout << "ul1" << UL1 << endl;
-		UL_INIT= UL, BR_INIT = BR;
-		
-		rectangle( img, UL, BR, drawColor, 2 );
-		printf("    %-9.3f %-9.3f %-9.3f %-9.3f %-5g %-9g %-9g\n", x1, y1, x2, y2, level, component,score );
+		if (i == 0)//draw only number 0
+		{
 
-		memset( buf, 0, 100 );
-		sprintf_s( buf, "%-2d %-3.0f %-3.0f %-3.0f %-3.0f  %-2.0f %-2.0f %-6.3f", i,x1,y1,x2,y2,level,component,score );
-		string msg(buf);
-		int	 baseline = 0;
-		cv::Size textSize = cv::getTextSize(msg, fontFace, fontScale, 1, &baseline);
-		cv::Point txtOrig(5, (i + 1)*(textSize.height + 3));
-		putText(img, msg, txtOrig, fontFace, fontScale, fontColor);
+			UL_INIT = UL, BR_INIT = BR;
 
-		char buf2[4] = { '0' };
-		sprintf_s( buf2, 4, "%d", i );
-		msg = buf2;
-		cv::Point textOrg2(int(x1) + 3, int(y1) + textSize.height + 5);
-		putText(img, msg, textOrg2, fontFace, fontScale, drawColor);
+			rectangle(img, UL, BR, drawColor, 2);
+			printf("    %-9.3f %-9.3f %-9.3f %-9.3f %-5g %-9g %-9g\n", x1, y1, x2, y2, level, component, score);
+
+			memset(buf, 0, 100);
+			sprintf_s(buf, "%-2d %-3.0f %-3.0f %-3.0f %-3.0f  %-2.0f %-2.0f %-6.3f", i, x1, y1, x2, y2, level, component, score);
+			string msg(buf);
+			int	 baseline = 0;
+			cv::Size textSize = cv::getTextSize(msg, fontFace, fontScale, 1, &baseline);
+			cv::Point txtOrig(5, (i + 1)*(textSize.height + 3));
+			putText(img, msg, txtOrig, fontFace, fontScale, fontColor);
+
+			char buf2[4] = { '0' };
+			sprintf_s(buf2, 4, "%d", i);
+			msg = buf2;
+			cv::Point textOrg2(int(x1) + 3, int(y1) + textSize.height + 5);
+			putText(img, msg, textOrg2, fontFace, fontScale, drawColor);
+		}
 
 	
 	}
