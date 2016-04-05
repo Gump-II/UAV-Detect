@@ -26,7 +26,7 @@ int main(int argc, char* argv[]){
 
 	cv::Mat frame;
 	cv::Mat image;
-	cv::VideoCapture capture("uav_data/1.avi");
+	cv::VideoCapture capture("uav_data/6.avi");
 	//cv::VideoCapture capture(0);
 	if (model_path.empty()){
 		cout << "Please input model file...." << endl;
